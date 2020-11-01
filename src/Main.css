@@ -1,0 +1,12 @@
+:root {
+    --main-color: #223645;
+    --secondary-color: #9f1524;
+    --dark: #1a1d26;
+    --light: #fff5ef;
+    --light-medium: #dcdcdc;
+    --spacing: 8px;
+    --spacing-medium: calc(var(--spacing) * 2);
+    --spacing-large: calc(var(--spacing) * 4);
+    --main-font: 'Poppins', sans-serif;
+    --title-font: 'Anton', sans-serif;
+  }
