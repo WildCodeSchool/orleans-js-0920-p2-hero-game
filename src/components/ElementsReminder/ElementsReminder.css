@@ -1,0 +1,29 @@
+.fas {
+    color:black;
+    height: 100px;
+    width: 50px;
+  }
+  
+  .ElementsReminderContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
+  #Cleverness {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  #Resistance {
+    grid-column: 3 / 3;
+    grid-row: 1;
+  }
+  #Speed {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+  #Strength {
+    grid-column: 3 / 3;
+    grid-row: 3;
+  
+  }
