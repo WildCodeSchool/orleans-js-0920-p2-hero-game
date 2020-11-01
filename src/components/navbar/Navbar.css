@@ -1,0 +1,180 @@
+a{
+    text-decoration: none;
+}
+
+.navbar_total{
+    background-color: var(--dark);
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+
+.navbar_picLogo{
+    height: 60px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar_logo{
+    width: 60px;
+    height: 60px;
+}
+
+.navbar_navigation{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_divLogo{
+    display: flex;
+    background-color:var(--light);
+    height: 80px;
+    width: 80px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 0px 10px #11131a;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar_rightDiv{
+    display: flex;
+    padding-right: 50px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_navList{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar_title{
+    color:var(--light);
+    font-family: var(--title-font);
+    font-size: 20pt;
+    list-style: none;
+}
+
+.navbar_title:hover{
+    color: #66605d;
+}
+
+.navbar_home{
+    display: block;
+    position: absolute;
+    width: 110px;
+    font-family: var(--title-font);
+    font-weight: bold;
+    text-align: right;
+    color:#253A49;
+    font-size: 20pt;
+    opacity: 0;
+}
+
+.navbar_divLogo:hover{
+    width: 200px;
+    transition: 0.2s ease;
+}
+
+.navbar_divLogo:hover .navbar_home{
+    position: inherit;
+    opacity: 100;
+    transition: 0.3s ease 0.1s;
+}
+
+.navbar_burgerMenu{
+    display: none;
+}
+
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .navbar_burgerMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 5vw;
+    }
+
+    .navbar_navList{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        height: 40vh;
+        transition: 0.5s ease-in-out;
+        padding: 0;
+    }
+
+    .navbar_title{
+        color: var(--dark);
+    }
+
+    .navbar_rightDiv{
+        display: none;
+        opacity: 0;
+    }
+    
+    span{
+        display: flex;
+        background-color: var(--light);
+        height: 3px;
+        width : 30px;
+        margin-bottom: 0.3em;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    .navbar_rightDiv.open{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        width: 80vw;
+        padding-right: 0;
+        padding-top: 18vh;
+        animation-name: opacity;
+        animation-duration: 1s;
+        opacity: 1;
+        }
+
+    .navbar_divLogo.open {
+        width: 80vw;
+        height: 100vh;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar_divLogo.open .navbar_picLogo{
+        padding-bottom: 80vh;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar_burgerMenu.open .navbar_spanMid {
+        transform: translateX(-50px);
+        height: 0px;
+    }
+    .navbar_burgerMenu.open .navbar_spanTop {
+        transform: rotate(45deg) translate(0px, 8px);
+    }
+    .navbar_burgerMenu.open .navbar_spanBot {
+        transform: rotate(-45deg) translate(0px, -8px);
+    }
+
+}
