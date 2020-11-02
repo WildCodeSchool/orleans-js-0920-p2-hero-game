@@ -6,6 +6,7 @@ function Player() {
     return(
         <div>
             <div className="PlayerMain">
+            <a className="buttonplay" href='#'><h2 className="play">JOUER</h2></a>
                <video 
                 autoPlay
                 loop
