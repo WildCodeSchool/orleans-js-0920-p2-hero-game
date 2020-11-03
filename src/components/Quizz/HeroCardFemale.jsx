@@ -1,8 +1,8 @@
-import CaptainMarvelCard from './../HeroesCards/CaptainMarvel_Story.png';
-import GamoraCard from './../HeroesCards/Carte_Gamora_Story-min.png'
-import HarleyQuinnCard from './../HeroesCards/Carte_Harleyquinn_Story-min.png';
-import InvisibleWomanCard from './../HeroesCards/Carte_Invisiblewoman_Story-min.png';
-import WonderWomanCard from './../HeroesCards/Carte_Wonderwoman_Story-min.png';
+import CaptainMarvelCard from '../Quizz/HeroesCards/CaptainMarvel_Story.png';
+import GamoraCard from '../Quizz/HeroesCards/Carte_Gamora_Story-min.png'
+import HarleyQuinnCard from '../Quizz/HeroesCards/Carte_Harleyquinn_Story-min.png';
+import InvisibleWomanCard from '../Quizz/HeroesCards/Carte_Invisiblewoman_Story-min.png';
+import WonderWomanCard from '../Quizz/HeroesCards/Carte_Wonderwoman_Story-min.png';
 
 const heroCardFemale= [
 {

@@ -5,7 +5,7 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Jeux from './components/pages/Jeux';
 import Accueil from './components/pages/Accueil';
 import NavBar from './components/navbar/Navbar'
-import Quizz from './components/Quizz';
+import Quizz from '../src/components/Quizz/Quizz';
 
 function App() {
   return (

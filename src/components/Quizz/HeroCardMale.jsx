@@ -1,8 +1,8 @@
-import FlashCard from './../HeroesCards/Carte_Flash_Story-min.png';
-import IronmanCard from './../HeroesCards/Carte_Ironman_Story-min.png';
-import JokerCard from './../HeroesCards/Carte_Joker_Story-min.png';
-import SpidermanCard from './../HeroesCards/Carte_Spiderman_Story-min.png';
-import SupermanCard from './../HeroesCards/Carte_Superman_Story-min.png';
+import FlashCard from '../Quizz/HeroesCards/Carte_Flash_Story-min.png';
+import IronmanCard from '../Quizz/HeroesCards/Carte_Ironman_Story-min.png';
+import JokerCard from '../Quizz/HeroesCards/Carte_Joker_Story-min.png';
+import SpidermanCard from '../Quizz/HeroesCards/Carte_Spiderman_Story-min.png';
+import SupermanCard from '../Quizz/HeroesCards/Carte_Superman_Story-min.png';
 
 const heroCardMale = [
     {

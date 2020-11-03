@@ -132,7 +132,8 @@ a{
         opacity: 0;
     }
     
-    span{
+    .navbar_spanTop 
+    {
         display: flex;
         background-color: var(--light);
         height: 3px;
@@ -142,6 +143,24 @@ a{
         transition: all 0.5s ease-in-out;
     }
 
+    .navbar_spanMid {
+        display: flex;
+        background-color: var(--light);
+        height: 3px;
+        width : 30px;
+        margin-bottom: 0.3em;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    .navbar_spanBot  {
+        display: flex;
+        background-color: var(--light);
+        height: 3px;
+        width : 30px;
+        margin-bottom: 0.3em;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
 
     .navbar_rightDiv.open{
         display: flex;
