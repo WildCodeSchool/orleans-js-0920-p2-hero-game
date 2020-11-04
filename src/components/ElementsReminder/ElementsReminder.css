@@ -79,7 +79,7 @@
   grid-column: 11 / 24;
   grid-row: 5;
 }
-/*Responsive a faire plus tard en paysage, adapter en fonction des autres elements du jeu + display none la navbar*/
+
 @media screen and (max-width : 500px){
   .fa-long-arrow-alt-right {
     height: 22px;
