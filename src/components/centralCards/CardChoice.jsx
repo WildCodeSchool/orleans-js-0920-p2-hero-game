@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CardChoose() {
+function CardChoice() {
 
     let imgU = document.querySelector('.UserCard');
 
@@ -72,5 +72,5 @@ function CardChoose() {
 
 }
 
-export default CardChoose
+export default CardChoice
 

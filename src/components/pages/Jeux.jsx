@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../navbar/Navbar';
 import CentralCard from '../centralCards/CentralCards'
 
 
@@ -10,3 +9,5 @@ function Jeux() {
         </div>
     )
 }
+
+export default Jeux

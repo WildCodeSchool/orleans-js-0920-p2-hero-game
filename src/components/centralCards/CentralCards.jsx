@@ -4,7 +4,7 @@ import Anim from './AnimAttack'
 import Superman from '../cards/Carte_Superman-min.png'
 import Joker from '../cards/Carte_Joker-min.png'
 import Mera from '../cards/Carte_Mera-min.png'
-import CardChoose from './CardChoice'
+import CardChoice from './CardChoice'
 import CardLeave from './CardLeave'
 
 class CentralCard extends React.Component {
@@ -21,7 +21,7 @@ class CentralCard extends React.Component {
         return(
             
             <div className="CentralDiv">
-                <div className="DivUser" onMouseEnter={CardChoose} onMouseLeave={CardLeave}>
+                <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}>
                     {/* <p className="TitleCard">JOKER</p> */}
                     <picture className="Card"><img className="UserCard" src={this.state.userCard} alt="Carte User en jeu" /></picture>
                     <button className="ButtonAttack1 BtnU" onClick={Anim}></button>
