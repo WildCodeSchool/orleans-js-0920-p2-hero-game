@@ -4,7 +4,7 @@ import Anim from './AnimAttack'
 import Superman from '../cards/Carte_Superman-min.png'
 import Joker from '../cards/Carte_Joker-min.png'
 import Mera from '../cards/Carte_Mera-min.png'
-import CardChoose from './CardChoose'
+import CardChoose from './CardChoice'
 import CardLeave from './CardLeave'
 
 class CentralCard extends React.Component {

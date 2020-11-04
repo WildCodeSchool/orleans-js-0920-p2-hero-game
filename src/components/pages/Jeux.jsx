@@ -10,5 +10,3 @@ function Jeux() {
         </div>
     )
 }
-
-export default Jeux
