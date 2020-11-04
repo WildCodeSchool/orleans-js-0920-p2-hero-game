@@ -16,7 +16,6 @@ function App() {
           <Route exact path="/" component={Accueil} />
           <Route path="/game" component={Jeux} />
         </Switch>
-        <Quizz />
         <Footer />
       </div>
     </Router>

@@ -1,0 +1,178 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+    margin: 0px;
+    padding: 0px;
+}
+
+/*.twenty-one {
+    display: flex;
+    grid-column: 4/7;
+    grid-row: 1/5;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 75px;
+    font-family: var(--title-font);
+    color: var(--secondary-color);   
+}*/
+
+.one {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 7;
+    grid-row: 1;
+}
+
+.four {
+    grid-column: 8;
+    grid-row: 1;
+}
+
+.five {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.six {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.seven {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.eight {
+    grid-column: 7;
+    grid-row: 2;
+}
+
+.nine {
+    grid-column: 8;
+    grid-row: 2;
+}
+
+.ten {
+    grid-column: 9;
+    grid-row: 2;
+}
+
+.eleven {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.twelve {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.thirteen {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.fourteen {
+    grid-column: 7;
+    grid-row: 3;
+}
+
+.fifteen {
+    grid-column: 8;
+    grid-row: 3;
+}
+
+.sixteen {
+    grid-column: 9;
+    grid-row: 3;
+}
+
+.seventeen {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.eighteen {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.nineteen {
+    grid-column: 7;
+    grid-row: 4;
+}
+
+.twenty {
+    grid-column: 8;
+    grid-row: 4;
+}
+
+.card{
+    display: flex;
+    grid-column: 4/7;
+    grid-row: 1/5;
+    height: 92%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+#icons{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+
+#icons:hover{
+    height: 175px;
+    width: 175px;
+}
+
+.strenght{
+    margin: auto;
+    height: 125px;
+    width: 125px;
+    grid-column: 9;
+    grid-row: 1;
+}
+
+.speed{
+    margin: auto;
+    height: 125px;
+    width: 125px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.durabi{
+    margin: auto;
+    height: 125px;
+    width: 125px;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.intel{
+    margin: auto;
+    height: 125px;
+    width: 125px;
+    grid-column: 9;
+    grid-row: 4;
+    
+}
