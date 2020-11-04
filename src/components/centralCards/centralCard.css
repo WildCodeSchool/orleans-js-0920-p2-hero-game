@@ -1,0 +1,179 @@
+.CentralDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: var(--main-color);
+    margin-top: 80px;
+    padding-top: 80px;
+    height: 90vh;
+    width: 100vw;
+}
+
+.TitleCard{
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: 20pt;
+    color: var(--light);
+    text-shadow: 2px 4px 5px #101218;
+}
+
+.DivUser{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ButtonAttack1{
+    display: block;
+    position: relative;
+    bottom: 240px;
+    left: -167px;
+    height: 51px;
+    width: 250px;
+    background-color: transparent;
+    background-position: top 237px left -16px;
+    border: none;
+}
+
+
+.ButtonAttack2{
+    display: block;
+    position: relative;
+    bottom: 232px;
+    left: -167px;
+    height: 51px;
+    width: 250px;
+    background-color: transparent;
+    background-position: top 178px left -16px;
+    border: none;
+}
+
+.ButtonAttack3{
+    display: block;
+    position: relative;
+    bottom: 227px;
+    left: -167px;
+    height: 51px;
+    width: 250px;
+    background-color: transparent;
+    background-position: top 121px left -16px;
+    border: none;
+}
+
+.ButtonAttack4{
+    display: block;
+    position: relative;
+    bottom: 219px;
+    left: -167px;
+    height: 51px;
+    width: 250px;
+    background-color: transparent;
+    background-position: top 62px left -16px;
+    border: none;
+}
+
+.Joker{
+    background-image: url(../cards/Carte_Joker-min.png);
+}
+
+.CaptainMarvel {
+    background-image: url(../cards/Carte_CaptainMarvel-min.png)
+}
+
+.Flash {
+    background-image: url(../cards/Carte_Flash-min.png)
+}
+
+.Gamora {
+    background-image: url(../cards/Carte_Gamora-min.png)
+}
+
+.Greenlantern {
+    background-image: url(../cards/Carte_Greenlantern-min.png)
+}
+
+.Groot {
+    background-image: url(../cards/Carte_Groot-min.png)
+}
+
+.Harleyquinn {
+    background-image: url(../cards/Carte_Harleyquinn-min.png)
+}
+
+.Hulk {
+    background-image: url(../cards/Carte_Hulk-min.png)
+}
+
+.Invisiblewoman {
+    background-image: url(../cards/Carte_Invisiblewoman-min.png)
+}
+
+.Ironman {
+    background-image: url(../cards/Carte_Ironman-min.png)
+}
+
+.Joker {
+    background-image: url(../cards/Carte_Joker-min.png)
+}
+
+.Medusa {
+    background-image: url(../cards/Carte_Medusa-min.png)
+}
+
+.Mera {
+    background-image: url(../cards/Carte_Mera-min.png)
+}
+
+.Poisonivy {
+    background-image: url(../cards/Carte_Poisonivy-min.png)
+}
+
+.QuickSilver {
+    background-image: url(../cards/Carte_QuickSilver-min.png)
+}
+
+.Spiderman {
+    background-image: url(../cards/Carte_Spiderman-min.png)
+}
+
+.Supergirl {
+    background-image: url(../cards/Carte_Supergirl-min.png)
+}
+
+.Superman {
+    background-image: url(../cards/Carte_Superman-min.png)
+}
+
+.Thanos {
+    background-image: url(../cards/Carte_Thanos-min.png)
+}
+
+.Wolwerine {
+    background-image: url(../cards/Carte_Wolwerine-min.png)
+}
+
+.Wonderwoman {
+    background-image: url(../cards/Carte_Wonderwoman-min.png)
+}
+
+
+.ButtonAttack1:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+.ButtonAttack2:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+.ButtonAttack3:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+.ButtonAttack4:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
