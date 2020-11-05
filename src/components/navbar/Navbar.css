@@ -6,7 +6,7 @@ a{
     background-color: var(--dark);
     position: fixed;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     z-index: 5;
 }
