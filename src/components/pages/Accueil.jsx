@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Navbar from '../navbar/Navbar';
 import CharacterList from '../CharacterList/CharacterList'
 import Quizz from '../Quizz'

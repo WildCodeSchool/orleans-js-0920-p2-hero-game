@@ -1,12 +1,11 @@
 import React from 'react'
-import Navbar from '../navbar/Navbar';
-import ElementsReminder from '../ElementsReminder/ElementsReminder';
+import CentralCard from '../centralCards/CentralCards'
+
 
 function Jeux() {
     return (
         <div style={{ background: 'beige', height: '100vh', width: '100vw' }}>
-            Jeux
-            <ElementsReminder />
+            <CentralCard />
         </div>
     )
 }
