@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import './Quizz.css';
 import heroCardMale from './HeroCardMale';
 import heroCardFemale from './HeroCardFemale';
-import CaptainMarvelCard from './../HeroesCards/CaptainMarvel_Story.png';
-import GamoraCard from './../HeroesCards/Carte_Gamora_Story-min.png';
-import HarleyQuinnCard from './../HeroesCards/Carte_Harleyquinn_Story-min.png';
-import InvisibleWomanCard from './../HeroesCards/Carte_Invisiblewoman_Story-min.png';
-import WonderWomanCard from './../HeroesCards/Carte_Wonderwoman_Story-min.png'
-import FlashCard from './../HeroesCards/Carte_Flash_Story-min.png';
-import IronmanCard from './../HeroesCards/Carte_Ironman_Story-min.png';
-import JokerCard from './../HeroesCards/Carte_Joker_Story-min.png';
-import SpidermanCard from './../HeroesCards/Carte_Spiderman_Story-min.png';
-import SupermanCard from './../HeroesCards/Carte_Superman_Story-min.png';
-import BgImg from './../HeroesCards/Section_QuelHeros.png';
+import CaptainMarvelCard from '../Quizz/HeroesCards/CaptainMarvel_Story.png';
+import GamoraCard from '../Quizz/HeroesCards/Carte_Gamora_Story-min.png';
+import HarleyQuinnCard from '../Quizz/HeroesCards/Carte_Harleyquinn_Story-min.png';
+import InvisibleWomanCard from '../Quizz/HeroesCards/Carte_Invisiblewoman_Story-min.png';
+import WonderWomanCard from '../Quizz/HeroesCards/Carte_Wonderwoman_Story-min.png'
+import FlashCard from '../Quizz/HeroesCards/Carte_Flash_Story-min.png';
+import IronmanCard from '../Quizz/HeroesCards/Carte_Ironman_Story-min.png';
+import JokerCard from '../Quizz/HeroesCards/Carte_Joker_Story-min.png';
+import SpidermanCard from '../Quizz/HeroesCards/Carte_Spiderman_Story-min.png';
+import SupermanCard from '../Quizz/HeroesCards/Carte_Superman_Story-min.png';
+
 function Quizz() {
 
     const questions = [
@@ -53,7 +53,7 @@ function Quizz() {
             questionText: 'Vous avez un examen très important demain ! Que faîtes-vous ?',
             answerOptions: [
                 { answerText: 'J\'étudie toute la nuit.', isCorrect: true},
-                { answerText: 'Je ne m\'en fais pas tout ira bien.', isCorrect: true },
+                { answerText: 'Je ne m\'en fais pas, tout ira bien.', isCorrect: true },
                 { answerText: 'Un examen ? Comme je suis malade !', isCorrect: false },
 
             ],
@@ -135,7 +135,7 @@ function Quizz() {
                         
                         <div className='question-section'>
                             <div className='question-count'>
-                                <span>Question {currentQuestion + 1}</span>/{questions.length}
+                                <span className="question-count-span">Question {currentQuestion + 1}</span>/{questions.length}
                             </div>
                             <div className='question-text'>{questions[currentQuestion].questionText}</div>
                         </div>
