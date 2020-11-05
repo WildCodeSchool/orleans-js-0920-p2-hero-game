@@ -15,7 +15,7 @@
     text-shadow: -5px 5px 5px #cfc7c2;
     text-align: center;
     margin-bottom: 10vh;
-    margin-top: -10vh;
+    margin-top: 10vh;
 
 }
 .quizz-container {
@@ -34,6 +34,10 @@
     text-shadow: 2px  var(--light);
     font-size: 26px;
     padding-top: 16px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
 }
 .question-text {
     color: var(--light);
@@ -71,14 +75,10 @@
     height:500px;
     width: 350px;
 }
-.score-section img:hover {
-
-    transform: scale(1, 1.2);
-   
-}
 
 
-@media screen and (max-width : 950px)  {
+
+@media screen and (max-width : 768px)  {
     .quizz-container {
 
         display: flex;
@@ -100,6 +100,18 @@
         padding-right: 5vw;
         
     }
+    .question-count span{
+       display: flex;
+       flex-wrap: nowrap;
+       flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    .Quizz-title {
+        margin-top: 10vh;
+    }
+   
     }
 @media screen and (max-width: 500px ) {
     .Quizz-title {
@@ -109,7 +121,7 @@
         text-shadow: -5px 5px 5px #cfc7c2;
         text-align: center;
         margin-bottom: 10vh;
-        margin-top: 5vh;
+        margin-top: 10vh;
     
     }
     .question-text {
@@ -120,6 +132,10 @@
         padding-left: 5vw;
         padding-right: 5vw;
         
+    }
+    .question-count{
+        padding-left: 10vw;
+        font-size: 20px;
     }
     .answer-section button {
         margin-top: 28px;

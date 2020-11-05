@@ -4,9 +4,10 @@ import './Main.css'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Jeux from './components/pages/Jeux';
 import Accueil from './components/pages/Accueil';
-import NavBar from './components/navbar/Navbar';
+import NavBar from './components/navbar/Navbar'
+import Quizz from '../src/components/Quizz/Quizz';
 import Player from './components/player/Player';
-import Quizz from './components/Quizz';
+
 
 function App() {
   return (
@@ -18,7 +19,6 @@ function App() {
           <Route exact path="/" component={Accueil} />
           <Route path="/game" component={Jeux} />
         </Switch>
-        <Quizz />
         <Footer />
       </div>
     </Router>
