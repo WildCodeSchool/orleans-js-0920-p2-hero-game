@@ -1,13 +1,14 @@
 import {Component} from 'react'
 import './Player.css';
 import Videotraileravenger from '../video/videotraileravenger.mp4';
+import { Switch, Route, Link } from 'react-router-dom';
 
 function Player() {
     return(
         <div>
-            <div className="PlayerMain">
-            <a className="buttonplay" href='#'><h2 className="play">JOUER</h2></a>
-               <video 
+            <div className="PlayerMain" id="home">
+            <Link className="buttonplay" to="/game" ><h2 className="play">JOUER</h2></Link>
+               <video className="video"
                 autoPlay
                 loop
                 muted>

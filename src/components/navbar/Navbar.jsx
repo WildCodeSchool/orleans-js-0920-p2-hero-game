@@ -3,7 +3,7 @@ import './Navbar.css';
 import logo from './Logo_Mini.png';
 import open from './Annim';
 import { Switch, Route, Link } from 'react-router-dom';
-import Jeux from '../pages/Jeux';
+
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class Navbar extends React.Component {
                 <nav className="navbar_total" id="Marty">
                     <div className="navbar_navigation">
                         <div className="navbar_divLogo">
-                            <Link className="navbar_home" to="/" >ACCUEIL</Link>
+                            <Link className="navbar_home" to="/">ACCUEIL</Link>
                             <picture className="navbar_picLogo"><img className="navbar_logo" src={logo} alt="Logo My Sup'R Heros" /></picture>
                         </div>
 

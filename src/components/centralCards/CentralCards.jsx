@@ -20,7 +20,8 @@ class CentralCard extends React.Component {
         
         return(
             
-            <div className="CentralDiv">
+            <div >
+                <div className="CentralDiv">    
                 <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}>
                     {/* <p className="TitleCard">JOKER</p> */}
                     <picture className="Card"><img className="UserCard" src={this.state.userCard} alt="Carte User en jeu" /></picture>
@@ -33,6 +34,7 @@ class CentralCard extends React.Component {
                 <div>
                     {/* <p className="TitleCard">SUPERMAN</p> */}
                     <picture className="Card"><img className="EnemyCard" src={this.state.enemyCard} alt="Carte Enemy en jeu"/></picture>
+                </div>
                 </div>
             </div>
 
