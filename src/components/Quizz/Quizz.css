@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 80px;
    
 }
 .Quizz-title {
@@ -70,6 +71,7 @@
     margin-top: -18px;
     margin-bottom: 38px;
     text-shadow: var(--secondary-color) 1px 1px 1px;
+    text-align: center;
 }
 .score-section img {
     height:500px;
