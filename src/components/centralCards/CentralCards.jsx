@@ -6,6 +6,10 @@ import Joker from '../cards/Carte_Joker-min.png'
 import Mera from '../cards/Carte_Mera-min.png'
 import CardChoice from './CardChoice'
 import CardLeave from './CardLeave'
+import VS from '../assets/VS.png'
+import ElementsReminder from '../ElementsReminder/ElementsReminder'
+import Logo_Entier from '../assets/Logo_Entier.png'
+
 
 class CentralCard extends React.Component {
     constructor(props) {
@@ -21,7 +25,7 @@ class CentralCard extends React.Component {
         return(
             
             <div >
-                <div className="CentralDiv">    
+                <div className="CentralDiv">
                 <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}>
                     {/* <p className="TitleCard">JOKER</p> */}
                     <div class="healthBarShell">
@@ -33,6 +37,14 @@ class CentralCard extends React.Component {
                     <button className="ButtonAttack3 BtnU" onClick={Anim}></button>
                     <button className="ButtonAttack4 BtnU" onClick={Anim}></button>
                 </div>
+                <div className="VisualContainer">
+                    <img className="LogoGame" src={Logo_Entier}></img>
+                    <img className="Versus" src={VS}></img>
+                    <div className="ElementsReminderContainer">
+                            <ElementsReminder />
+                    </div>
+                    
+                </div>
                 
                 <div className="EnemyCard">
                     {/* <p className="TitleCard">SUPERMAN</p> */}
@@ -42,6 +54,7 @@ class CentralCard extends React.Component {
                         <div class="healthBarValueCPU"></div>
                     </div>
                 </div>
+                
                 </div>
             </div>
 

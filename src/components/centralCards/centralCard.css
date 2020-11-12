@@ -5,10 +5,11 @@
     align-items: flex-start;
     background-color: var(--main-color);
     /*margin-top: 80px;*/
-    padding-top: 80px;
+    padding-top: 150px;
     height: 90vh;
     width: 100vw;
 }
+
 
 .TitleCard{
     font-family: var(--title-font);
@@ -17,11 +18,25 @@
     color: var(--light);
     text-shadow: 2px 4px 5px #101218;
 }
-
 .DivUser{
     display:flex;
     flex-direction: column;
     align-items: flex-end;
+}
+.VisualContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.LogoGame {
+    height: 170px;
+    width: 170px;
+    background-color: var(--light);
+}
+.Versus{
+    height: 500px;
+    width: 500px
 }
 
 .ButtonAttack1{
@@ -76,14 +91,16 @@
 
 .healthBarShell {
     display: flex;
-    width: 85%;
+    width: 87%;
     height: 30px;
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
     margin: 0px;
     
-    transform: skew(-40deg,0deg);
+    transform: skew(-40deg,0deg) translateX(10px);
     box-shadow: 0px, 0px, 1px ;
+
+   
   }
   
   .healthBarValue {
@@ -102,13 +119,13 @@
 .healthBarShellCPU {
     display: flex;
     justify-content: flex-end;
-    width: 85%;
+    width: 87%;
     height: 30px;
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
     margin: 0px;
     
-    transform: skew(-40deg,0deg);
+    transform: skew(-40deg,0deg) translateX(-10px);
     box-shadow: 0px, 0px, 1px ;
   }
   
