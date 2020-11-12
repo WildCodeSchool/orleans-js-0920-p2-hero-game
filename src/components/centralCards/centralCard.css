@@ -35,10 +35,12 @@
     background-color: var(--light);
 }
 .Versus{
-    height: 500px;
-    width: 500px
+    height: 450px;
+    width: 450px
 }
-
+.ElementsReminderContainer{
+    border: solid 2px var(--light);
+}
 .ButtonAttack1{
     display: block;
     position: relative;
