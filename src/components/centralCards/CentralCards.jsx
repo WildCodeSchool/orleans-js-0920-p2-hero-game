@@ -24,6 +24,9 @@ class CentralCard extends React.Component {
                 <div className="CentralDiv">    
                 <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}>
                     {/* <p className="TitleCard">JOKER</p> */}
+                    <div class="healthBarShell">
+                        <div class="healthBarValue"></div>
+                    </div>
                     <picture className="Card"><img className="UserCard" src={this.state.userCard} alt="Carte User en jeu" /></picture>
                     <button className="ButtonAttack1 BtnU" onClick={Anim}></button>
                     <button className="ButtonAttack2 BtnU" onClick={Anim}></button>
@@ -31,9 +34,13 @@ class CentralCard extends React.Component {
                     <button className="ButtonAttack4 BtnU" onClick={Anim}></button>
                 </div>
                 
-                <div>
+                <div className="EnemyCard">
                     {/* <p className="TitleCard">SUPERMAN</p> */}
+                   
                     <picture className="Card"><img className="EnemyCard" src={this.state.enemyCard} alt="Carte Enemy en jeu"/></picture>
+                    <div class="healthBarShellCPU">
+                        <div class="healthBarValueCPU"></div>
+                    </div>
                 </div>
                 </div>
             </div>
