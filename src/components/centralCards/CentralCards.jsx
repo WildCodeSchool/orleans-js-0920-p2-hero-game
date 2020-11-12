@@ -8,7 +8,7 @@ import CardChoice from './CardChoice'
 import CardLeave from './CardLeave'
 import VS from '../assets/VS.png'
 import ElementsReminder from '../ElementsReminder/ElementsReminder'
-import Logo_Entier from '../assets/Logo_Entier.png'
+import Logo_Big from '../assets/Logo_Big.png'
 
 
 class CentralCard extends React.Component {
@@ -38,7 +38,7 @@ class CentralCard extends React.Component {
                     <button className="ButtonAttack4 BtnU" onClick={Anim}></button>
                 </div>
                 <div className="VisualContainer">
-                    <img className="LogoGame" src={Logo_Entier}></img>
+                    <img className="LogoGame" src={Logo_Big}></img>
                     <img className="Versus" src={VS}></img>
                     <div className="ElementsReminderContainer">
                             <ElementsReminder />
