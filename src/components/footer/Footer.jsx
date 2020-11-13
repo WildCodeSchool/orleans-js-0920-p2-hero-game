@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css';
 import Github from './github_icon-icons.com_65450.png';
 import WCS from './WCS.png';
-import LogoMSH from './Logo_Entier.png';
+import LogoMSH from './Logo_Big.png';
 
 function Footer() {
     return(
