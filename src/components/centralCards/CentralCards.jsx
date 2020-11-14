@@ -6,6 +6,10 @@ import Joker from '../cards/Carte_Joker-min.png'
 import Mera from '../cards/Carte_Mera-min.png'
 import CardChoice from './CardChoice'
 import CardLeave from './CardLeave'
+import VS from '../assets/VS.png'
+import ElementsReminder from '../ElementsReminder/ElementsReminder'
+import Logo_Big from '../assets/Logo_Big.png'
+
 
 function CentralCard() {
 
@@ -276,20 +280,35 @@ function CentralCard() {
 
 
     return(
-            
-        <div >
-            <div className="CentralDiv">    
-            <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}>
-                <picture className="Card"><img className="UserCard" src={userHero} alt="Carte User en jeu" /></picture>
-                <button className="ButtonAttack1 BtnU" onClick={Anim}></button>
-                <button className="ButtonAttack2 BtnU" onClick={Anim}></button>
-                <button className="ButtonAttack3 BtnU" onClick={Anim}></button>
-                <button className="ButtonAttack4 BtnU" onClick={Anim}></button>
-            </div>
+            <div >
+                <div className="CentralDiv">
+                <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}
+                    <div class="healthBarShell">
+                        <div class="healthBarValue"></div>
+                    </div>
+                    <picture className="Card"><img className="UserCard" src={userHero} alt="Carte User en jeu" /></picture>
+                    <button className="ButtonAttack1 BtnU" onClick={Anim}></button>
+                    <button className="ButtonAttack2 BtnU" onClick={Anim}></button>
+                    <button className="ButtonAttack3 BtnU" onClick={Anim}></button>
+                    <button className="ButtonAttack4 BtnU" onClick={Anim}></button>
+                </div>
+                <div className="VisualContainer">
+                    <img className="LogoGame" src={Logo_Big}></img>
+                    <img className="Versus" src={VS}></img>
+                    <div className="ElementsReminderContainer">
+                            <ElementsReminder />
+                    </div>
+                    
+                </div>
                 
-            <div>
-                <picture className="Card"><img className="EnemyCard" src={enemyHero} alt="Carte Enemy en jeu"/></picture>
-            </div>
+                <div className="EnemyCard">
+                    <picture className="Card"><img className="EnemyCard" src={enemyHero} alt="Carte Enemy en jeu"/></picture>
+                    <div class="healthBarShellCPU">
+                    <div class="healthBarValueCPU"></div>
+                    </div>
+                </div>
+                
+                </div>
             </div>
         </div>
 
