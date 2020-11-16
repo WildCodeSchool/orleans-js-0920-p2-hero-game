@@ -78,7 +78,7 @@
 @media screen and (max-width: 1024px) {
     .buttonplay {
       font-size: 2rem;
-      top: 30%;
+      top: 20%;
     }
 }
 @media screen and (max-width: 767px) {
@@ -87,7 +87,7 @@
   }
   .buttonplay {
     font-size: 1rem;
-    top: 40%;
+    top: 30%;
   }
   .play {
     padding: 20px;
