@@ -280,11 +280,14 @@ function CentralCard() {
 
 
     return(
-            <div >
+            <div>
                 <div className="CentralDiv">
-                <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}
-                    <div class="healthBarShell">
-                        <div class="healthBarValue"></div>
+                <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}>
+                    <div className="healthBarShell">
+                        <div className="healthBarValue">
+                            </div>
+                     
+                      
                     </div>
                     <picture className="Card"><img className="UserCard" src={userHero} alt="Carte User en jeu" /></picture>
                     <button className="ButtonAttack1 BtnU" onClick={Anim}></button>
@@ -310,7 +313,7 @@ function CentralCard() {
                 
                 </div>
             </div>
-        </div>
+     
 
     )
     
