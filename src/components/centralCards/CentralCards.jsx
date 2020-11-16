@@ -102,7 +102,7 @@ function CentralCard() {
     const [res, setRes] = useState([])
 
     const [userHero, setUserHero] = useState(Mera)
-    const [enemyHero, setEnemeyEHero] = useState(Superman)
+    const [enemyHero, setEnemeyEHero] = useState(Joker)
 
     const [btnCle, setbtnCle] = useState(0)
     const [btnStr, setbtnStr] = useState(0)
@@ -113,6 +113,11 @@ function CentralCard() {
     const [btnStrEnemy, setbtnStrEnemy] = useState(0)
     const [btnSpeEnemy, setbtnSpeEnemy] = useState(0)
     const [btnResEnemy, setbtnResEnemy] = useState(0)
+
+     useEffect(() => {localStorage.setItem('cleEnemy', btnCleEnemy);}, [btnCleEnemy]);
+     useEffect(() => {localStorage.setItem('strEnemy', btnStrEnemy);}, [btnStrEnemy]); 
+     useEffect(() => {localStorage.setItem('speEnemy', btnSpeEnemy);}, [btnSpeEnemy]);
+     useEffect(() => {localStorage.setItem('resEnemy', btnResEnemy);}, [btnResEnemy]);
 
     useEffect(() => {
         fetch('https://my-super-heroes-api-wcs.herokuapp.com/heroes')
@@ -222,6 +227,7 @@ function CentralCard() {
 
             }
 
+
             for(let y = 0; y < checkUser.length; y++){
 
                 if(checkEnemy[y] > 0){
@@ -282,7 +288,7 @@ function CentralCard() {
     return(
             <div >
                 <div className="CentralDiv">
-                <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}
+                <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}>
                     <div class="healthBarShell">
                         <div class="healthBarValue"></div>
                     </div>
@@ -310,7 +316,6 @@ function CentralCard() {
                 
                 </div>
             </div>
-        </div>
 
     )
     

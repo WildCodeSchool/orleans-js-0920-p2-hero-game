@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 function Anim() {
     document.querySelector(".DivUser").animate([
@@ -25,6 +26,19 @@ function Anim() {
         duration: 500,
         iterations: 1
       });
+
+      let opponentStrenght = localStorage.getItem('strEnemy')
+        
+      
+
+      let opponentSpeed = localStorage.getItem('speEnemy')
+     
+
+      let opponentIntel = localStorage.getItem('cleEnemy')
+      
+
+      let oppnentDura = localStorage.getItem('resEnemy')
+     
 
       function opponent (){
         document.querySelector(".EnemyCard").animate([
@@ -59,16 +73,16 @@ function Anim() {
 
         const random = Math.random()
         if (random >= 0.75){
-          console.log('Intel dmg')
+          console.log(opponentStrenght)
         }
         else if (random < 0.75 && random >= 0.50){
-          console.log('strght dmg')
+          console.log(opponentSpeed)
         }
         else if (random < 0.50 && random >= 0.25){
-          console.log('speed dmg')
+          console.log(opponentIntel)
         }
         else {
-          console.log('durabi dmg')
+          console.log(oppnentDura)
         }
       }
       setTimeout(Damage, 1500);
