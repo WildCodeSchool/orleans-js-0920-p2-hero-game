@@ -132,7 +132,7 @@ function CentralCard() {
     useEffect(() => {
             
 
-            const tab1 = [
+            const checkUser = [
                 userHero.indexOf("QuickSilver"),
                 userHero.indexOf("CaptainMarvel"),
                 userHero.indexOf("Superman"),
@@ -156,7 +156,7 @@ function CentralCard() {
                 
             ]
 
-            const tab3 = [
+            const checkEnemy = [
                 enemyHero.indexOf("QuickSilver"),
                 enemyHero.indexOf("CaptainMarvel"),
                 enemyHero.indexOf("Superman"),
@@ -180,7 +180,7 @@ function CentralCard() {
                 
             ]
         
-            const tab2 = [
+            const nameChange = [
                 "Quick Silver",
                 "Captain Marvel",
                 "Superman",
@@ -204,9 +204,9 @@ function CentralCard() {
             
             ]
             
-            for(let n = 0; n < tab1.length; n++){
+            for(let n = 0; n < checkUser.length; n++){
 
-                if(tab1[n] > 0){
+                if(checkUser[n] > 0){
                         setbtnStr(fullChamp[n].strengthAttack.attackStats)
                         setbtnSpe(fullChamp[n].speedAttack.attackStats)
                         setbtnCle(fullChamp[n].clevernessAttack.attackStats)
@@ -218,9 +218,9 @@ function CentralCard() {
 
             }
 
-            for(let y = 0; y < tab1.length; y++){
+            for(let y = 0; y < checkUser.length; y++){
 
-                if(tab3[y] > 0){
+                if(checkEnemy[y] > 0){
                         setbtnStrEnemy(fullChamp[y].strengthAttack.attackStats)
                         setbtnSpeEnemy(fullChamp[y].speedAttack.attackStats)
                         setbtnCleEnemy(fullChamp[y].clevernessAttack.attackStats)
@@ -235,10 +235,10 @@ function CentralCard() {
 
             let nameCheck = ""
 
-            for(let v = 0; v < tab3.length; v++){
+            for(let v = 0; v < checkEnemy.length; v++){
 
-                if(tab3[v] > 0){
-                        nameCheck = tab2[v]
+                if(checkEnemy[v] > 0){
+                        nameCheck = nameChange[v]
                 } 
                 else {
                 }
