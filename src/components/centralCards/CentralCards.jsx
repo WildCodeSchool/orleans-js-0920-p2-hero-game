@@ -14,83 +14,83 @@ import Logo_Big from '../assets/Logo_Big.png'
 function CentralCard() {
 
     const [fullChamp, setFullchamp] = useState([
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}},
-        {"clevernessAttack":{"attackStats":0},
+        {healthPoints: "", "clevernessAttack":{"attackStats":0},
         "strengthAttack":{"attackStats":0},
         "speedAttack":{"attackStats":0},
         "resistanceAttack":{"attackStats":0}}
@@ -101,13 +101,17 @@ function CentralCard() {
     const [cle, setCle] = useState([])
     const [res, setRes] = useState([])
 
-    const [userHero, setUserHero] = useState(Mera)
+    const [userHero, setUserHero] = useState(Superman)
     const [enemyHero, setEnemeyEHero] = useState(Joker)
 
     const [btnCle, setbtnCle] = useState(0)
     const [btnStr, setbtnStr] = useState(0)
     const [btnSpe, setbtnSpe] = useState(0)
     const [btnRes, setbtnRes] = useState(0)
+    const [lifeBarAlly, setLifeBarAlly] = useState([])
+     
+    useEffect(() => {localStorage.setItem('lifeAlly', lifeBarAlly);}, [lifeBarAlly]);
+
 
     const [btnCleEnemy, setbtnCleEnemy] = useState(0)
     const [btnStrEnemy, setbtnStrEnemy] = useState(0)
@@ -134,8 +138,15 @@ function CentralCard() {
             setCle(fullChamp.filter((hero) => hero.type === "Cleverness"))
             setRes(fullChamp.filter((hero) => hero.type === "Resistance"))
        }, 1000)
+
+       console.log(fullChamp)
         
     },[fullChamp])
+
+
+    useEffect(() => {
+        console.log(lifeBarAlly)
+    }, [lifeBarAlly])
 
 
     useEffect(() => {
@@ -220,6 +231,8 @@ function CentralCard() {
                         setbtnSpe(fullChamp[n].speedAttack.attackStats)
                         setbtnCle(fullChamp[n].clevernessAttack.attackStats)
                         setbtnRes(fullChamp[n].resistanceAttack.attackStats)
+                        setLifeBarAlly(fullChamp[n].healthPoints)
+                        
 
                 } else {
                     
@@ -227,7 +240,7 @@ function CentralCard() {
 
             }
 
-
+            
             for(let y = 0; y < checkUser.length; y++){
 
                 if(checkEnemy[y] > 0){
@@ -271,6 +284,41 @@ function CentralCard() {
                 else if(res[x].name.includes(nameCheck)){
                     setbtnSpe(btnSpe * 0.5)
                     setbtnCle(btnCle * 2)
+                }
+                else{
+
+                }
+
+            }
+
+            let nameCheckEnemy = ""
+
+            for(let v = 0; v < checkUser.length; v++){
+
+                if(checkUser[v] > 0){
+                        nameCheckEnemy = nameChange[v]
+                } 
+                else {
+                }
+        
+            }
+
+            for(let x = 0; x < str.length; x++){
+                if(spe[x].name.includes(nameCheckEnemy)){
+                    setbtnStrEnemy(btnStrEnemy * 0.5)
+                    setbtnResEnemy(btnResEnemy * 2)
+                }
+                if(str[x].name.includes(nameCheckEnemy)){
+                    setbtnCleEnemy(btnCleEnemy * 0.5)
+                    setbtnSpeEnemy(btnSpeEnemy * 2)
+                }
+                if(cle[x].name.includes(nameCheckEnemy)){
+                    setbtnResEnemy(btnResEnemy * 0.5)
+                    setbtnStrEnemy(btnStrEnemy * 2)
+                }
+                if(res[x].name.includes(nameCheckEnemy)){
+                    setbtnSpeEnemy(btnSpeEnemy * 0.5)
+                    setbtnCleEnemy(btnCleEnemy * 2)
                 }
                 else{
 

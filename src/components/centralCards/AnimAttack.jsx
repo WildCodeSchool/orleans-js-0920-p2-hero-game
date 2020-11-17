@@ -28,16 +28,13 @@ function Anim() {
       });
 
       let opponentStrenght = localStorage.getItem('strEnemy')
-        
-      
-
       let opponentSpeed = localStorage.getItem('speEnemy')
-     
-
       let opponentIntel = localStorage.getItem('cleEnemy')
-      
-
       let oppnentDura = localStorage.getItem('resEnemy')
+
+      let lifeAlly = localStorage.getItem('lifeAlly')
+      let newValue = lifeAlly
+      console.log(newValue)
      
 
       function opponent (){
@@ -73,16 +70,20 @@ function Anim() {
 
         const random = Math.random()
         if (random >= 0.75){
-          console.log(opponentStrenght)
+          newValue = newValue - opponentStrenght
+          console.log(newValue)
         }
         else if (random < 0.75 && random >= 0.50){
-          console.log(opponentSpeed)
+          newValue = newValue - opponentSpeed
+          console.log(newValue)
         }
         else if (random < 0.50 && random >= 0.25){
-          console.log(opponentIntel)
+          newValue = newValue - opponentIntel
+          console.log(newValue)
         }
         else {
-          console.log(oppnentDura)
+          newValue = newValue - oppnentDura 
+          console.log(newValue)
         }
       }
       setTimeout(Damage, 1500);
