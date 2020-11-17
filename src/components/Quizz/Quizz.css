@@ -1,5 +1,6 @@
 .quizz{
     background-image: url("../assets/quizz-bg.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     width: 100vw;
@@ -87,7 +88,7 @@
 
 
 
-@media screen and (max-width : 768px)  {
+@media screen and (max-width : 800px)  {
     .quizz-container {
 
         display: flex;
@@ -120,11 +121,14 @@
     .Quizz-title {
         margin-top: 10vh;
     }
-   
+   .score-section img {
+       height: auto;
+       width: 45vw;
+   }
     }
 @media screen and (max-width: 500px ) {
     .Quizz-title {
-        font-size: 32pt;
+        font-size: 30pt;
         color: var(--secondary-color);
         font-family: var(--title-font);
         text-shadow: -5px 5px 5px #cfc7c2;
