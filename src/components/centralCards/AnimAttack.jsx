@@ -32,11 +32,6 @@ function Anim() {
       let opponentIntel = localStorage.getItem('cleEnemy')
       let oppnentDura = localStorage.getItem('resEnemy')
 
-      let lifeAlly = localStorage.getItem('lifeAlly')
-      let newValue = lifeAlly
-      console.log(newValue)
-     
-
       function opponent (){
         document.querySelector(".EnemyCard").animate([
           { transform: 'translateX(0vw)' },   
@@ -69,27 +64,22 @@ function Anim() {
       function Damage(){
 
         let newLife = localStorage.getItem("MajLife")
-        console.log("c'est newlife", newLife)
 
         const random = Math.random()
         if (random >= 0.75){
           newLife = newLife - opponentStrenght
-          console.log("c'est newlife dans le calcul", newLife)
           localStorage.setItem('MajLife', newLife)
         }
         else if (random < 0.75 && random >= 0.50){
           newLife = newLife - opponentSpeed
-          console.log("c'est newlife dans le calcul", newLife)
           localStorage.setItem('MajLife', newLife)
         }
         else if (random < 0.50 && random >= 0.25){
           newLife= newLife - opponentIntel
-          console.log("c'est newlife dans le calcul", newLife)
           localStorage.setItem('MajLife', newLife)
         }
         else {
           newLife = newLife - oppnentDura 
-          console.log("c'est newlife dans le calcul", newLife)
           localStorage.setItem('MajLife', newLife)
         }
       }

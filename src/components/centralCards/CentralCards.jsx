@@ -115,12 +115,10 @@ function CentralCard() {
 
     useEffect(() => {
         setMajLife(parseInt(localStorage.getItem("lifeAlly")))
-        console.log("c'est lifebarally", lifeBarAlly)
     }, [lifeBarAlly])
     
     
     useEffect(() => {
-        console.log('majlife Mise à jour',majLife)
         localStorage.setItem("MajLife", majLife)
     }, [majLife])
 
