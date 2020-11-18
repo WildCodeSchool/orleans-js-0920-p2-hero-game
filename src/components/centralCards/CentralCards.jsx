@@ -122,6 +122,36 @@ function CentralCard() {
         localStorage.setItem("MajLife", majLife)
     }, [majLife])
 
+    let lifeBar = ""
+
+    useEffect(() => {
+        lifeBar = document.querySelector(".healthBarValue")   
+    }, [majLife])
+
+    let endCalcul = 0
+
+    const majCalcul = () => {
+        endCalcul = ((majLife) * 100) / (parseInt(localStorage.getItem("lifeAlly")))
+        console.log('cest endcalcul dans la fonction', endCalcul)
+    }
+
+    useEffect(() => {
+        majCalcul()
+    }, [majLife])
+    
+    const [calculLife, setCalculLife] = useState(100)
+
+    useEffect(() => {
+        setCalculLife((endCalcul))
+        console.log("cest endcalcul", endCalcul)
+    },[endCalcul])
+
+    useEffect(() => {
+        lifeBar.style.width = `${calculLife}%` 
+        console.log("c'est calcul life", calculLife)
+    }, [lifeBar])
+
+
     const [btnCleEnemy, setbtnCleEnemy] = useState(0)
     const [btnStrEnemy, setbtnStrEnemy] = useState(0)
     const [btnSpeEnemy, setbtnSpeEnemy] = useState(0)
