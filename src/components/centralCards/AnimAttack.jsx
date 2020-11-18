@@ -68,22 +68,29 @@ function Anim() {
 
       function Damage(){
 
+        let newLife = localStorage.getItem("MajLife")
+        console.log("c'est newlife", newLife)
+
         const random = Math.random()
         if (random >= 0.75){
-          newValue = newValue - opponentStrenght
-          console.log(newValue)
+          newLife = newLife - opponentStrenght
+          console.log("c'est newlife dans le calcul", newLife)
+          localStorage.setItem('MajLife', newLife)
         }
         else if (random < 0.75 && random >= 0.50){
-          newValue = newValue - opponentSpeed
-          console.log(newValue)
+          newLife = newLife - opponentSpeed
+          console.log("c'est newlife dans le calcul", newLife)
+          localStorage.setItem('MajLife', newLife)
         }
         else if (random < 0.50 && random >= 0.25){
-          newValue = newValue - opponentIntel
-          console.log(newValue)
+          newLife= newLife - opponentIntel
+          console.log("c'est newlife dans le calcul", newLife)
+          localStorage.setItem('MajLife', newLife)
         }
         else {
-          newValue = newValue - oppnentDura 
-          console.log(newValue)
+          newLife = newLife - oppnentDura 
+          console.log("c'est newlife dans le calcul", newLife)
+          localStorage.setItem('MajLife', newLife)
         }
       }
       setTimeout(Damage, 1500);

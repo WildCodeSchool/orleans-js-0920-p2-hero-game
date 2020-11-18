@@ -108,10 +108,21 @@ function CentralCard() {
     const [btnStr, setbtnStr] = useState(0)
     const [btnSpe, setbtnSpe] = useState(0)
     const [btnRes, setbtnRes] = useState(0)
-    const [lifeBarAlly, setLifeBarAlly] = useState([])
+    const [lifeBarAlly, setLifeBarAlly] = useState(0)
      
-    useEffect(() => {localStorage.setItem('lifeAlly', lifeBarAlly);}, [lifeBarAlly]);
+    useEffect(() => {localStorage.setItem('lifeAlly', lifeBarAlly);}, [lifeBarAlly])
+    let [majLife, setMajLife] = useState(0)
 
+    useEffect(() => {
+        setMajLife(parseInt(localStorage.getItem("lifeAlly")))
+        console.log("c'est lifebarally", lifeBarAlly)
+    }, [lifeBarAlly])
+    
+    
+    useEffect(() => {
+        console.log('majlife Mise à jour',majLife)
+        localStorage.setItem("MajLife", majLife)
+    }, [majLife])
 
     const [btnCleEnemy, setbtnCleEnemy] = useState(0)
     const [btnStrEnemy, setbtnStrEnemy] = useState(0)
@@ -142,11 +153,6 @@ function CentralCard() {
        console.log(fullChamp)
         
     },[fullChamp])
-
-
-    useEffect(() => {
-        console.log(lifeBarAlly)
-    }, [lifeBarAlly])
 
 
     useEffect(() => {
