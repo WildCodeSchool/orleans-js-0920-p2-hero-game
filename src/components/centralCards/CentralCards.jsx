@@ -282,9 +282,9 @@ function CentralCard() {
     return(
             <div >
                 <div className="CentralDiv">
-                <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}
-                    <div class="healthBarShell">
-                        <div class="healthBarValue"></div>
+                <div className="DivUser" onMouseEnter={CardChoice} onMouseLeave={CardLeave}>
+                    <div className="healthBarShell">
+                        <div className="healthBarValue"></div>
                     </div>
                     <picture className="Card"><img className="UserCard" src={userHero} alt="Carte User en jeu" /></picture>
                     <button className="ButtonAttack1 BtnU" onClick={Anim}></button>
@@ -303,14 +303,13 @@ function CentralCard() {
                 
                 <div className="EnemyCard">
                     <picture className="Card"><img className="EnemyCard" src={enemyHero} alt="Carte Enemy en jeu"/></picture>
-                    <div class="healthBarShellCPU">
-                    <div class="healthBarValueCPU"></div>
+                    <div className="healthBarShellCPU">
+                    <div className="healthBarValueCPU"></div>
                     </div>
                 </div>
-                
                 </div>
             </div>
-        </div>
+        
 
     )
     
