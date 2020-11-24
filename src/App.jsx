@@ -2,10 +2,11 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import './Main.css'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
-import Jeux from './components/pages/Jeux';
 import Accueil from './components/pages/Accueil';
 import NavBar from './components/navbar/Navbar'
 import Player from './components/player/Player';
+import Game from './components/pages/Jeux'
+import ChooseYourHero from './components/pages/ChooseYourHero';
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Accueil} />
-          <Route path="/game" component={Jeux} />
+          <Route path="/choosehero" component={ChooseYourHero} />
+          <Route path="/game" component={Game} />
         </Switch>
         <Footer />
       </div>

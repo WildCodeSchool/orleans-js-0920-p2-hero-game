@@ -3,12 +3,152 @@
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
-    background-color: var(--main-color);
+    background-color: var(--light);
     margin: 0px;
-    padding: 0px;
+    padding-top: 75px;
+   
 }
+
+/*debut animation background */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cube {
+  position: absolute;
+  z-index: 1;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #d40505;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+          transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: cube 12s ease-in forwards infinite;
+          animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #d40505;
+  z-index: -5;
+}
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+.cube:nth-child(7) {
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
+    left: 50vw;
+    top: 0vh;
+  }
+@-webkit-keyframes cube {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+            transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+            transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+
+
+/* fin de l'animation background */
+
+
+h6 {
+   position: absolute;
+   left: 55%;
+   top: 70%;
+   color: var(--light);
+   background-color: var(--secondary-color);
+   max-width: 150px;
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+   padding: 8px;
+   box-shadow: white 1px 1px 4px;
+   opacity: 90%;
+   z-index: 15;
+}
+
+h6:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+h6 {
+    animation-name: clickPleasev2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes clickPleasev2{
+    0% {
+        transform: translate(0%,0px);
+      }
+      50% {
+        transform: translate(0%,-40px);
+      }
+      100% {
+        transform: translate(0%,0px);
+      }
+    }
+    
 
 /*.twenty-one {
     display: flex;
@@ -129,6 +269,7 @@
     height: 92%;
     margin: auto;
     border-radius: 4px;
+    z-index: 10;
 }
 
 .history{
@@ -141,7 +282,7 @@
 }
 
 .text-under-card1{
-    color: var(--light);
+    color: var(--secondary-color);
     font-family: var(--main-font);
     font-weight: bolder;
     font-size: 21px;
@@ -153,22 +294,21 @@
     margin-top: 30vh;
     text-align: center;
     align-items: center;
-    width: 350px;
 }
+
 .text-under-card2{
-    color: var(--light);
+    color: var(--secondary-color);
     font-family: var(--main-font);
     font-weight: bolder;
-    font-size: 21px;
+    font-size: 30px;
     display: flex;
     grid-column: 4/7;
     grid-row: 1/5;
     margin: auto;
     margin-bottom: 30vh;
-    padding: 16px;
+    padding: 100px;
     text-align: center;
     align-items: center;
-    width: 350px;
 }
 #icons{
     height: 150px;
@@ -176,11 +316,13 @@
     margin: auto;
     border-radius: 4px;
     transition-duration: 0.5s;
+    z-index: 10;
 }
 
 #icons:hover{
     height: 175px;
     width: 175px;
+    cursor: pointer;
 }
 
 .strenght{
