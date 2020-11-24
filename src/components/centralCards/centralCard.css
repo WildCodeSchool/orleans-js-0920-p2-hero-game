@@ -41,7 +41,7 @@
     animation-fill-mode: backwards;
     
 }
-@keyframes versusmove {
+/* @keyframes versusmove {
     0% {
         transform: translate(30px,-10%);
       }
@@ -53,7 +53,7 @@
         transform: translate(30px,-10%);
       }
    
-}
+} */
 .ElementsReminderContainer{
     border: solid 2px var(--light);
 }

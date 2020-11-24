@@ -320,7 +320,7 @@ const HeroSelect = () => {
 
             <div className="text-under-card1"></div>
             <div className="text-under-card2">Sélectionnez votre Hero et confirmez votre choix pour commencer la partie !</div>
-            <Link className="buttonGo" to="/game "><button className="buttonGo"><h6>Incarner ce Hero</h6></button> </Link>
+            <Link className="buttonGo" to="/game"><button className="buttonGo"><h6>Incarner ce Hero</h6></button> </Link>
             <img className="history" src="" />
             <img className="card" src="" />
             <img id="icons" className="one" src={QuickSilverIc}  onClick={changeQuicksilver}  />
