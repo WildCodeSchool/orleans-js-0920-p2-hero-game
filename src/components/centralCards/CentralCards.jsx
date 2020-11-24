@@ -312,6 +312,7 @@ function CentralCard() {
                 </div>
                 
                 </div>
+            
             </div>
      
 

@@ -1,0 +1,58 @@
+.rules-container {
+    height: 90vh;
+    width: 100vw;
+    background-color: var(--main-color);
+    color : var(--light);
+    font-size: 22px;   
+    line-height: 22px;
+    font-family: var(--main-font); 
+}
+.rules-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-rules {
+    font-size: 16px;
+    height: 28vh;
+    width: 20vw;
+    border: 2px solid var(--light);
+   padding-left: 10px;
+   padding-right: 10px;
+    word-wrap: break-word;
+    text-align: justify;
+
+}
+.div-rules h3 {
+    text-align: center;
+}
+.div-rules-reminder {
+    justify-content: center;
+    font-size: 18px;
+    width: 90vw;
+    height: 30vh;
+    padding-left: 30vw;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+
+.main-rules-title {
+    padding-top: 5vh;
+    font-size: 42px;
+    color: var(--light);
+    text-align: center;
+}
+.rules-intro {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 4vh;
+
+}
+.rules-title {
+    align-items: center;
+}
+.rules-title-reminder {
+    padding-left: 15vw;
+    
+}

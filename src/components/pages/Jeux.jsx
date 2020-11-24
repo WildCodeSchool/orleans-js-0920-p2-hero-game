@@ -1,11 +1,12 @@
 import React from 'react'
 import CentralCard from '../centralCards/CentralCards'
-
+import Rules from '../Rules/Rules';
 
 function Jeux() {
     return (
-        <div style={{ background: 'beige', height: '100vh', width: '100vw' }}>
+        <div>
             <CentralCard />
+            <Rules />
         </div>
     )
 }
