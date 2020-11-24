@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: var(--main-color);
     padding-top: 150px;
     height: 90vh;
     width: 100vw;

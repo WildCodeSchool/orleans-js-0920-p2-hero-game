@@ -316,6 +316,17 @@ const HeroSelect = () => {
 
     return (
         <div id="list">
+
+<div class="hero"> 
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+
         <div id="character" className="list">
 
             <div className="text-under-card1"></div>
@@ -422,6 +433,7 @@ const HeroSelect = () => {
             <img className="durabi" src={DurabilityIc} />
             <img className="intel" src={IntelIc} />
 
+        </div>
         </div>
         </div>
     )
