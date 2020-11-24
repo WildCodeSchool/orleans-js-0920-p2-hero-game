@@ -3,12 +3,54 @@
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
-    background-color: var(--main-color);
+    background-color: var(--light);
     margin: 0px;
-    padding: 0px;
+    padding-top: 50px;
+   
 }
+h6 {
+   position: absolute;
+   left: 55%;
+   top: 70%;
+   color: var(--light);
+   background-color: var(--secondary-color);
+   max-width: 150px;
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+   padding: 8px;
+   box-shadow: white 1px 1px 4px;
+   opacity: 90%;
+}
+
+h6:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+h6 {
+    animation-name: clickPleasev2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes clickPleasev2{
+    0% {
+        transform: translate(0%,0px);
+      }
+      50% {
+        transform: translate(0%,-40px);
+      }
+      100% {
+        transform: translate(0%,0px);
+      }
+    }
+    
 
 /*.twenty-one {
     display: flex;
@@ -141,7 +183,7 @@
 }
 
 .text-under-card1{
-    color: var(--light);
+    color: var(--secondary-color);
     font-family: var(--main-font);
     font-weight: bolder;
     font-size: 21px;
@@ -153,22 +195,21 @@
     margin-top: 30vh;
     text-align: center;
     align-items: center;
-    width: 350px;
 }
+
 .text-under-card2{
-    color: var(--light);
+    color: var(--secondary-color);
     font-family: var(--main-font);
     font-weight: bolder;
-    font-size: 21px;
+    font-size: 30px;
     display: flex;
     grid-column: 4/7;
     grid-row: 1/5;
     margin: auto;
     margin-bottom: 30vh;
-    padding: 16px;
+    padding: 100px;
     text-align: center;
     align-items: center;
-    width: 350px;
 }
 #icons{
     height: 150px;
@@ -181,6 +222,7 @@
 #icons:hover{
     height: 175px;
     width: 175px;
+    cursor: pointer;
 }
 
 .strenght{

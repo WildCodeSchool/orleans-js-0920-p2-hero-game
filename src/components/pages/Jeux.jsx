@@ -1,13 +1,14 @@
-import React from 'react'
+import {useEffect} from 'react'
 import CentralCard from '../centralCards/CentralCards'
 
 
-function Jeux() {
+function Game() {
+
     return (
-        <div style={{ background: 'beige', height: '100vh', width: '100vw' }}>
+        <div>
             <CentralCard />
         </div>
     )
 }
 
-export default Jeux
+export default Game
