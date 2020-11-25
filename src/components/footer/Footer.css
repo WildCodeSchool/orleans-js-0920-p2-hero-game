@@ -10,6 +10,7 @@ a{
     width: 100vw;
     height: 30vh;
     background-color: var(--dark);
+    z-index: 5;
 }
 
 .footer_div{
