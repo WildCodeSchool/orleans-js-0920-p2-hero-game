@@ -137,7 +137,7 @@ function Anim2() {
         text.style.display = 'none'
         logo.style.marginTop = '0px'
       }
-      setTimeout(endTurn, 5000)
+      setTimeout(endTurn, 4000)
 
       function victory (){
         let newLifeEnn = parseInt(localStorage.getItem('MajLifeEnn'))
