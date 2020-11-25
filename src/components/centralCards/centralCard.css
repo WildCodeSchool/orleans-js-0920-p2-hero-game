@@ -19,6 +19,7 @@
     display:flex;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 2;
 }
 .VisualContainer {
     display: flex;
@@ -30,17 +31,14 @@
     height: 170px;
     width: 170px;
     background-color: var(--light);
+    position: relative;
 }
+
 .Versus{
     height: 450px;
     width: 450px;
-    animation-name: versusmove;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: backwards;
-    
-}
 
+}
 .ElementsReminderContainer{
     border: solid 2px var(--light);
 }
@@ -147,6 +145,7 @@
 .DivCPU{
     display:flex;
     flex-direction: column;
+    z-index: 2;
 }
   
 .Joker{
@@ -255,5 +254,96 @@
 .ButtonAttack4:hover {
     transform: scale(1.03);
     transition: 0.3s ease;
+
     cursor: pointer;
 }
+
+
+
+
+.newTurn{
+    display: none;
+    font-size: 70px;
+    z-index: 2;
+    -webkit-text-stroke: 1px black;
+    color:var(--light);
+    text-shadow:
+     3px 3px 0 var(--secondary-color),
+     -1px -1px 0 var(--secondary-color),  
+     1px -1px 0 var(--secondary-color),
+     -1px 1px 0 var(--secondary-color),
+     1px 1px 0 var(--secondary-color);
+}
+
+.endGame {
+    display: none;
+    background-color: var(--main-color);
+    margin-top: -150px;
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    z-index: 3;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttonretry {
+    height: 7vh;
+    width: 13vw;
+	box-shadow: 3px 4px 0px 0px #dcdcdc;
+	background-color:#022364;
+	border-radius:5px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#9f1525;
+	font-weight:bolder;
+	padding:12px 44px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #6e2626;
+    opacity: 1;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttonretry:hover {
+	background-color:#0756a6;
+}
+
+.buttonretry:active {
+	position:relative;
+	top:1px;
+}
+
+.victory {
+    display: none;
+    margin-bottom: 200px;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    -webkit-text-stroke: 1px black;
+    color:var(--light);
+    text-shadow:
+     3px 3px 0 var(--secondary-color),
+     -1px -1px 0 var(--secondary-color),  
+     1px -1px 0 var(--secondary-color),
+     -1px 1px 0 var(--secondary-color),
+     1px 1px 0 var(--secondary-color);
+}
+
+.defeat {
+    display: none;
+    margin-bottom: 200px;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    -webkit-text-stroke: 1px black;
+    color:var(--light);
+    text-shadow:
+     3px 3px 0 var(--secondary-color),
+     -1px -1px 0 var(--secondary-color),  
+     1px -1px 0 var(--secondary-color),
+     -1px 1px 0 var(--secondary-color),
+     1px 1px 0 var(--secondary-color);
+}
+
