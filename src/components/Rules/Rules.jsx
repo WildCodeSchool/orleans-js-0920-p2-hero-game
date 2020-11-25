@@ -32,22 +32,22 @@ export default function Rules () {
                             Chaque héros a un type d'élément de prédilection bien défini. Il existe 4 types d’éléments : 
                             </p>
                             <ul>
-                            <li>Force</li>
-                            <li>Intelligence</li>
-                            <li>Rapidité</li>
-                            <li>Résistance</li>
+                                <li>Force</li>
+                                <li>Intelligence</li>
+                                <li>Rapidité</li>
+                                <li>Résistance</li>
                             </ul>
                             </div>
                             <div className="div-p2">
-                            <p className="p2">Chaque type peut être super efficace ou faible face à un autre élément. 
+                            <p className="p2">Chaque type peut être super efficace ou faible face à un autre élément. </p>
                             <ul>
-                            <li>L’Intelligence est efficace contre la Résistance, mais faible face à la Force.</li>
-                            <li>La Résistance est efficace contre la Rapidité, mais faible face à l'Intelligence.</li>
-                            <li>La Rapidité est efficace contre la Force, mais faible face à la Résistance.</li>
-                            <li>La Force est efficace contre l’Intelligence, mais faible face à la Rapidité. </li>
-                            Ne vous inquiétez pas ! Un schéma de rappel de l’efficacité des éléments est présent sur la page du combat. 
+                                <li>L’Intelligence est efficace contre la Résistance, mais faible face à la Force.</li>
+                                <li>La Résistance est efficace contre la Rapidité, mais faible face à l'Intelligence.</li>
+                                <li>La Rapidité est efficace contre la Force, mais faible face à la Résistance.</li>
+                                <li>La Force est efficace contre l’Intelligence, mais faible face à la Rapidité. </li>
                             </ul>
-                            </p>
+                            <p> Ne vous inquiétez pas ! Un schéma de rappel de l’efficacité des éléments est présent sur la page du combat. 
+                               </p>
                             </div>
                         </div>
                         
