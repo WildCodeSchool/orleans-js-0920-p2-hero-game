@@ -1,14 +1,32 @@
-import React, { useLayoutEffect, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import './centralCard.css'
 import Anim from './AnimAttack'
-import Superman from '../cards/Carte_Superman-min.png'
-import Joker from '../cards/Carte_Joker-min.png'
-import Mera from '../cards/Carte_Mera-min.png'
 import CardChoice from './CardChoice'
 import CardLeave from './CardLeave'
 import VS from '../assets/VS.png'
 import ElementsReminder from '../ElementsReminder/ElementsReminder'
 import Logo_Big from '../assets/Logo_Big.png'
+
+import CaptainMarvel from '../assets/Carte_CaptainMarvel-min.png';
+import Flash from '../assets/Carte_Flash-min.png';
+import Gamora from '../assets/Carte_Gamora-min.png';
+import GreenLantern from '../assets/Carte_Greenlantern-min.png';
+import Groot from '../assets/Carte_Groot-min.png';
+import HarleyQuinn from '../assets/Carte_Harleyquinn-min.png';
+import Hulk from '../assets/Carte_Hulk-min.png';
+import InvisibleWoman from '../assets/Carte_Invisiblewoman-min.png';
+import IronMan from '../assets/Carte_Ironman-min.png';
+import Joker from '../assets/Carte_Joker-min.png';
+import Medusa from '../assets/Carte_Medusa-min.png';
+import Mera from '../assets/Carte_Mera-min.png';
+import PoisonIvy from '../assets/Carte_Poisonivy-min.png';
+import QuickSilver from '../assets/Carte_QuickSilver-min.png';
+import SpiderMan from '../assets/Carte_Spiderman-min.png';
+import SuperGirl from '../assets/Carte_Supergirl-min.png';
+import SuperMan from '../assets/Carte_Superman-min.png';
+import Thanos from '../assets/Carte_Thanos-min.png';
+import Wolwerine from '../assets/Carte_Wolwerine-min.png';
+import WonderWoman from '../assets/Carte_Wonderwoman-min.png';
 
 
 function CentralCard() {
@@ -96,13 +114,18 @@ function CentralCard() {
         "resistanceAttack":{"attackStats":0}}
 
     ])
+
+    const player = localStorage.getItem('player')
+
+    console.log("player", player)
+
     const [str, setStr] = useState([])
     const [spe, setSpe] = useState([])
     const [cle, setCle] = useState([])
     const [res, setRes] = useState([])
 
     const [userHero, setUserHero] = useState(Mera)
-    const [enemyHero, setEnemeyEHero] = useState(Superman)
+    const [enemyHero, setEnemeyEHero] = useState(SuperMan)
 
     const [btnCle, setbtnCle] = useState(0)
     const [btnStr, setbtnStr] = useState(0)
@@ -113,6 +136,64 @@ function CentralCard() {
     const [btnStrEnemy, setbtnStrEnemy] = useState(0)
     const [btnSpeEnemy, setbtnSpeEnemy] = useState(0)
     const [btnResEnemy, setbtnResEnemy] = useState(0)
+
+    useEffect(() => {
+        switch(player) {
+            case 'QuickSilver': return setUserHero(QuickSilver);
+            case 'Superman' : return setUserHero(SuperMan);
+            case 'Mera' : return setUserHero(Mera);
+            case 'Captainmarvel': return setUserHero(CaptainMarvel);
+            case 'Groot': return setUserHero(Groot);
+            case 'Gamora': return setUserHero(Gamora);
+            case 'Ironman' : return setUserHero(IronMan);
+            case 'Greenlantern': return setUserHero(GreenLantern);
+            case 'Hulk': return setUserHero(Hulk);
+            case 'Invisiblewoman':return setUserHero(InvisibleWoman);
+            case 'Wonderwoman': return setUserHero(WonderWoman);
+            case 'Wolwerine' : return setUserHero(Wolwerine);
+            case 'Thanos': return setUserHero(Thanos);
+            case 'Joker': return setUserHero(Joker);
+            case 'Harleyquinn': return setUserHero(HarleyQuinn);
+            case 'Poisonivy': return setUserHero(PoisonIvy);
+            case 'Medusa' : return setUserHero(Medusa);
+            case 'Spiderman': return setUserHero(SpiderMan);
+            case 'Flash' : return setUserHero(Flash);
+            case 'Supergirl' : return setUserHero(SuperGirl);
+            
+            default : setUserHero(SuperMan);
+        }
+
+    }, [])
+
+    useEffect(() => {
+        let randomE = Math.floor(Math.random() * 20);
+        console.log("random",randomE)
+
+        switch(randomE) {
+            case 1 : return setEnemeyEHero(QuickSilver);
+            case 2 : return setEnemeyEHero(SuperMan);
+            case 3 : return setEnemeyEHero(Mera);
+            case 4 : return setEnemeyEHero(CaptainMarvel);
+            case 5 : return setEnemeyEHero(Groot);
+            case 6 : return setEnemeyEHero(Gamora);
+            case 7 : return setEnemeyEHero(IronMan);
+            case 8 : return setEnemeyEHero(GreenLantern);
+            case 9 : return setEnemeyEHero(Hulk);
+            case 10 : return setEnemeyEHero(InvisibleWoman);
+            case 11 : return setEnemeyEHero(WonderWoman);
+            case 12 : return setEnemeyEHero(Wolwerine);
+            case 13 : return setEnemeyEHero(Thanos);
+            case 14 : return setEnemeyEHero(Joker);
+            case 15 : return setEnemeyEHero(HarleyQuinn);
+            case 16 : return setEnemeyEHero(PoisonIvy);
+            case 17 : return setEnemeyEHero(Medusa);
+            case 18 : return setEnemeyEHero(SpiderMan);
+            case 19 : return setEnemeyEHero(Flash);
+            case 20 : return setEnemeyEHero(SuperGirl);
+            
+            default : setEnemeyEHero(Mera);
+        }
+    }, [])
 
     useEffect(() => {
         fetch('https://my-super-heroes-api-wcs.herokuapp.com/heroes')

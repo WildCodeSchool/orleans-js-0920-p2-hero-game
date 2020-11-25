@@ -77,9 +77,9 @@ const HeroSelect = () => {
 
         const [quickSilver, setQuicksilver]= useState(false)
         const changeQuicksilver=() =>  setQuicksilver(!quickSilver)
-        
         useEffect(() => {
             if(quickSilver){
+                localStorage.setItem('player', 'QuickSilver')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -90,9 +90,9 @@ const HeroSelect = () => {
      
         const [superman, setSuperman]= useState(false)
         const changeSuperman=() => setSuperman(!superman)
-        
         useEffect(() => {
             if(superman){
+                localStorage.setItem('player', 'Superman')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -100,10 +100,12 @@ const HeroSelect = () => {
                 buttonSelect.style.display = "none"
             }
         },[superman])
+
         const [supergirl, setSupergirl]= useState(false)
         const changeSupergirl=() => setSupergirl(!supergirl)
         useEffect(() => {
             if(supergirl){
+                localStorage.setItem('player', 'Supergirl')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -111,10 +113,12 @@ const HeroSelect = () => {
                 buttonSelect.style.display = "none"
             }
         },[supergirl])
+
         const [mera, setMera]= useState(false)
         const changeMera=() => setMera(!mera)
         useEffect(() => {
             if(mera){
+                localStorage.setItem('player', 'Mera')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -122,10 +126,12 @@ const HeroSelect = () => {
                 buttonSelect.style.display = "none"
             }
         },[mera])
+
         const [flash, setFlash]= useState(false)
         const changeFlash=() => setFlash(!flash)
         useEffect(() => {
             if(flash){
+                localStorage.setItem('player', 'Flash')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -138,6 +144,7 @@ const HeroSelect = () => {
         const changeCaptainMarvel=() => setCaptainMarvel(!captainmarvel)
         useEffect(() => {
             if(captainmarvel){
+                localStorage.setItem('player', 'Captainmarvel')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -150,6 +157,7 @@ const HeroSelect = () => {
         const changeGroot=() => setGroot(!groot)
         useEffect(() => {
             if(groot){
+                localStorage.setItem('player', 'Groot')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -162,6 +170,7 @@ const HeroSelect = () => {
         const changeGamora=() => setGamora(!gamora)
         useEffect(() => {
             if(gamora){
+                localStorage.setItem('player', 'Gamora')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -174,6 +183,7 @@ const HeroSelect = () => {
         const changeIronman=() => setIronman(!ironman)
         useEffect(() => {
             if(ironman){
+                localStorage.setItem('player', 'Ironman')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -186,6 +196,7 @@ const HeroSelect = () => {
         const changeGreenLantern=() => setGreenLantern(!greenlantern)
         useEffect(() => {
             if(greenlantern){
+                localStorage.setItem('player', 'Greenlantern')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -198,6 +209,7 @@ const HeroSelect = () => {
         const changeHulk=() => setHulk(!hulk)
         useEffect(() => {
             if(hulk){
+                localStorage.setItem('player', 'Hulk')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -210,6 +222,7 @@ const HeroSelect = () => {
         const changeInvisiblewoman=() => setInvisiblewoman(!invisiblewoman)
         useEffect(() => {
             if(invisiblewoman){
+                localStorage.setItem('player', 'Invisiblewoman')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -222,6 +235,7 @@ const HeroSelect = () => {
         const changeWonderwoman=() => setWonderwoman(!wonderwoman)
         useEffect(() => {
             if(wonderwoman){
+                localStorage.setItem('player', 'Wonderwoman')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -234,6 +248,7 @@ const HeroSelect = () => {
         const changeWolwerine=() => setWolwerine(!wolwerine)
         useEffect(() => {
             if(wolwerine){
+                localStorage.setItem('player', 'Wolwerine')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -246,6 +261,7 @@ const HeroSelect = () => {
         const changeThanos=() => setThanos(!thanos)
         useEffect(() => {
             if(thanos){
+                localStorage.setItem('player', 'Thanos')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -258,6 +274,7 @@ const HeroSelect = () => {
         const changeJoker=() => setJoker(!joker)
         useEffect(() => {
             if(joker){
+                localStorage.setItem('player', 'Joker')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -270,6 +287,7 @@ const HeroSelect = () => {
         const changeHarleyquinn=() => setHarleyquinn(!harleyquinn)
         useEffect(() => {
             if(harleyquinn){
+                localStorage.setItem('player', 'Harleyquinn')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -282,6 +300,7 @@ const HeroSelect = () => {
         const changePoisonIvy=() => setPoisonIvy(!poisonivy)
         useEffect(() => {
             if(poisonivy){
+                localStorage.setItem('player', 'Poisonivy')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -294,6 +313,7 @@ const HeroSelect = () => {
         const changeMedusa=() => setMedusa(!medusa)
         useEffect(() => {
             if(medusa){
+                localStorage.setItem('player', 'Medusa')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
@@ -306,6 +326,7 @@ const HeroSelect = () => {
         const changeSpiderman=() => setSpiderman(!spiderman)
         useEffect(() => {
             if(spiderman){
+                localStorage.setItem('player', 'Spiderman')
                 buttonSelect = document.querySelector("h6")
                 buttonSelect.style.display = "flex"
             } else {
