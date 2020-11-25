@@ -203,7 +203,7 @@ const CharacterList = () => {
         <div id="character" className="list">
 
             <div className="text-under-card1"></div>
-            <div className="text-under-card2">Clique sur une icône pour afficher l'histoire du Personnage, cliques une deuxième fois sur l'icône pour enlever l'affichage. </div>
+            <div className="text-under-card2">Clique sur une icône pour afficher l'histoire du Personnage, clique une deuxième fois sur l'icône pour enlever l'affichage. </div>
 
             <img className="history" src="" />
             <img className="card" src="" />
