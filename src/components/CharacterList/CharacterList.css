@@ -126,7 +126,7 @@
     display: flex;
     grid-column: 4/7;
     grid-row: 1/5;
-    height: 92%;
+    height: 80%;
     margin: auto;
     border-radius: 4px;
 }
