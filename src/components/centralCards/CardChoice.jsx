@@ -56,11 +56,8 @@ function CardChoice() {
 
     for(let n = 0; n != 20; n++){
 
-        console.log("num",tab1[n])
         if(tab1[n] > 0){
-            console.log(btnU)
             for(let i = 0; i < btnU.length; i++){
-                console.log(tab2[n])
                 btnU[i].classList.add(tab2[n])
             }
             
