@@ -3,13 +3,10 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: var(--main-color);
-    /*margin-top: 80px;*/
     padding-top: 150px;
     height: 90vh;
     width: 100vw;
 }
-
 
 .TitleCard{
     font-family: var(--title-font);
@@ -40,7 +37,7 @@
 .Versus{
     height: 450px;
     width: 450px;
-    position: relative;
+
 }
 .ElementsReminderContainer{
     border: solid 2px var(--light);
@@ -239,22 +236,29 @@
 .ButtonAttack1:hover {
     transform: scale(1.03);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .ButtonAttack2:hover {
     transform: scale(1.03);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .ButtonAttack3:hover {
     transform: scale(1.03);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .ButtonAttack4:hover {
     transform: scale(1.03);
     transition: 0.3s ease;
+
+    cursor: pointer;
 }
+
+
 
 
 .newTurn{
@@ -342,3 +346,4 @@
      -1px 1px 0 var(--secondary-color),
      1px 1px 0 var(--secondary-color);
 }
+
