@@ -440,6 +440,7 @@ function CentralCard() {
                     <button className="buttonretry" onClick={refreshPage}> Rejouer ? </button>
                 </div>
             </div>
+        </div>
      
 
     )
