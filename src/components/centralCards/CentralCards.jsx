@@ -522,6 +522,7 @@ function CentralCard() {
                     <div className='victory'>Victoire !</div>
                     <button className="buttonretry" onClick={refreshPage}> Rejouer ? </button>
                 </div>
+            
             </div>
         </div>
      

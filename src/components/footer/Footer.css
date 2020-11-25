@@ -3,6 +3,7 @@ a{
 }
 
 .footer_total{
+  
     display: flex;
     flex-direction: row;
     justify-content: center;

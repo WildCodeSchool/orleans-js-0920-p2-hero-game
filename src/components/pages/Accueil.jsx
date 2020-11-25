@@ -9,7 +9,7 @@ function Accueil() {
       <Player />
       <CharacterList />
       <Quizz />
-
+   
     </div>
   );
 }
