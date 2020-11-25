@@ -1,3 +1,20 @@
+To install : 
+  - git clone https://github.com/WildCodeSchool/orleans-js-0920-p2-hero-game.git
+  - sudo npm install
+  - npm install react-router-dom
+  
+ To Start :
+  -cd orleans-js-0920-p2-hero-game
+  -npm start
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
