@@ -501,7 +501,7 @@ function CentralCard() {
                 </div>
                 <div className="VisualContainer">
                     <img className="LogoGame" src={Logo_Big}></img>
-                    <div className="newTurn">À toi de Jouer !</div>
+                    <div className="newTurn">À TOI DE JOUER !</div>
                     <img className="Versus" src={VS}></img>
                     <div className="ElementsReminderContainer">
                         <ElementsReminder />

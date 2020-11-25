@@ -259,11 +259,28 @@
 }
 
 
-
+@keyframes spawn{
+    from {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 70%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
 
 .newTurn{
     display: none;
-    font-size: 70px;
+    position: absolute;
+    opacity: 0%;
+    font-size: 100px;
+    animation-duration: 2.5s;
+    animation-name: spawn;
     z-index: 2;
     -webkit-text-stroke: 1px black;
     color:var(--light);

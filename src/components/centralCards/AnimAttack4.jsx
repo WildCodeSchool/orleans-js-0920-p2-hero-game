@@ -123,21 +123,17 @@ function Anim4() {
 
       function turn(){
         let text = document.querySelector('.newTurn');
-        let logo = document.querySelector('.LogoGame');
 
-        text.style.display = 'block'
-        logo.style.marginTop = '-85px'
+        text.style.display = 'flex'
       }
-      setTimeout(turn, 3000)
+      setTimeout(turn, 2500)
 
       function endTurn() {
         let text = document.querySelector('.newTurn');
-        let logo = document.querySelector('.LogoGame');
 
         text.style.display = 'none'
-        logo.style.marginTop = '0px'
       }
-      setTimeout(endTurn, 4000)
+      setTimeout(endTurn, 3800)
 
       function victory (){
         let newLifeEnn = parseInt(localStorage.getItem('MajLifeEnn'))
