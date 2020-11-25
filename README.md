@@ -4,6 +4,7 @@ To install :
   - npm install react-router-dom
   
  To Start :
+  -cd orleans-js-0920-p2-hero-game
   -npm start
 
 
