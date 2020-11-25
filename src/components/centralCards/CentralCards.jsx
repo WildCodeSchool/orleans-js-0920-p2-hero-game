@@ -433,9 +433,9 @@ function CentralCard() {
                     </div>
                 </div>
                 <div className="endGame">
-                    <div className='defeat'>You lose..</div>
-                    <div className='victory'>YOU WIN !</div>
-                    <button className="buttonretry" onClick={refreshPage}> Replay ? </button>
+                    <div className='defeat'>Défaite..</div>
+                    <div className='victory'>Victoire !</div>
+                    <button className="buttonretry" onClick={refreshPage}> Rejouer ? </button>
                 </div>
             </div>
         </div>
