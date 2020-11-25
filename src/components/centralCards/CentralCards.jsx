@@ -1,4 +1,5 @@
 import React, {  useEffect, useState } from 'react'
+import { Switch, Route, Link } from 'react-router-dom';
 import './centralCard.css'
 
 import Anim1 from './AnimAttack1'
@@ -480,10 +481,7 @@ function CentralCard() {
 
     }, [res])
 
-    const refreshPage = () => {
-        window.location.reload();
-    }
-
+    
 
 
 
@@ -503,7 +501,7 @@ function CentralCard() {
                 </div>
                 <div className="VisualContainer">
                     <img className="LogoGame" src={Logo_Big}></img>
-                    <div className="newTurn">It's your turn!</div>
+                    <div className="newTurn">À toi de Jouer !</div>
                     <img className="Versus" src={VS}></img>
                     <div className="ElementsReminderContainer">
                         <ElementsReminder />
@@ -518,9 +516,9 @@ function CentralCard() {
                     </div>
                 </div>
                 <div className="endGame">
-                    <div className='defeat'>Défaite..</div>
+                    <div className='defeat'>Défaite</div>
                     <div className='victory'>Victoire !</div>
-                    <button className="buttonretry" onClick={refreshPage}> Rejouer ? </button>
+                    <Link className="buttonplay" to="/choosehero" ><button className="buttonretry"> Rejouer ? </button></Link>
                 </div>
             
             </div>
