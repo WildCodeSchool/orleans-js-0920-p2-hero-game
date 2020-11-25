@@ -7,6 +7,7 @@
     font-size: 22px;   
     line-height: 22px;
     font-family: var(--main-font); 
+    padding-bottom: 15vh;
 }
 
 .rules-cards {
