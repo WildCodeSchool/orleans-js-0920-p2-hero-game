@@ -51,6 +51,7 @@ a{
 .navbar_navList{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     width: 100%;
     padding-right: 100px;
 }
