@@ -27,12 +27,10 @@ class Navbar extends React.Component {
                         <div className="navbar_rightDiv">
                             <ul className="navbar_navList">
 
-                                <Link className="navbar_title" to="/choosehero" >JEUX</Link>
-
-                                <a href="#list"><li className="navbar_title">PERSONNAGES</li></a>
-                                <a href="#quizz"><li className="navbar_title">QUIZZ</li></a>
+                                <Link className="navbar_title" to="/choosehero" >ACCÈS AU JEU</Link>
                             </ul>
                         </div>
+                        
                         <a className="navbar_burgerMenu" href="#" onClick={open}>
                             <span className="navbar_spanTop"></span>
                             <span className="navbar_spanMid"></span>
