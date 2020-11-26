@@ -38,6 +38,7 @@
 }
 .cube:nth-child(2n) {
   border-color: #d40505;
+  z-index: -5;
 }
 .cube:nth-child(2) {
   -webkit-animation-delay: 2s;
@@ -108,7 +109,7 @@
 
 h6 {
    position: absolute;
-   left: 55%;
+   left: 54.5%;
    top: 70%;
    color: var(--light);
    background-color: var(--secondary-color);

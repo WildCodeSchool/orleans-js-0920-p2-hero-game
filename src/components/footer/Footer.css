@@ -9,7 +9,7 @@ a{
     justify-content: center;
     align-items: flex-start;
     width: 100vw;
-    height: 30vh;
+    height: 32vh;
     background-color: var(--dark);
     z-index: 5;
 }

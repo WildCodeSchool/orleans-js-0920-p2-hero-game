@@ -31,7 +31,7 @@
 }
 .play{
     animation-name: clickPlease;
-    animation-duration: 0.5s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-fill-mode: backwards;
     
@@ -39,29 +39,59 @@
 
 @keyframes clickPlease {
   0% {
-    transform: translate(0%,15%);
+    transform: translate(0%,10%);
   }
   50% {
-    transform: translate(0%,-15%);
+    transform: translate(0%,-10%);
   }
   100% {
-    transform: translate(0%,0%);
+    transform: translate(0%,10%);
   }
 }
 
 .video{
   width: 100vw;
 }
+.down{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 95%;
+  top: 87.5%;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: white  0px 0px 5px;
+  animation-name: down ;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+.down:hover{
+  transform: scale(1.2);
+  transition: 1s all;
+  animation: none;
+}
 
+
+@keyframes down {
+  0%{
+      opacity: 0%;
+      
+  }
+  50%{
+      opacity: 100%;
+  }
+  100%{
+      opacity: 0%;
+  }
+}
 .play:hover {
-    transition: 0.3s all;
+    transition: 0.5s all;
     transform: scale(1.3);
-    animation-name: slideBtn;
-    animation-duration: 1s;
+    animation-duration: 0s;
     animation-iteration-count: initial;
 }
 
-@keyframes slideBtn {
+/* @keyframes slideBtn {
   0% {
     transform: translate(0%,0%);
   }
@@ -71,7 +101,7 @@
   50% {
     transform: translate(-20%,0%);
   }
-}
+} */
 
   
 
@@ -79,6 +109,9 @@
     .buttonplay {
       font-size: 2rem;
       top: 20%;
+    }
+    .down{
+     display: none;
     }
 }
 @media screen and (max-width: 767px) {
@@ -91,5 +124,8 @@
   }
   .play {
     padding: 20px;
+  }
+  .down{
+    display: none;
   }
 }
