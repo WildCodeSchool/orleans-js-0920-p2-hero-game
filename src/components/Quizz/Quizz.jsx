@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Quizz.css';
 import heroCardMale from './HeroCardMale';
 import heroCardFemale from './HeroCardFemale';
@@ -14,6 +14,10 @@ import SpidermanCard from '../Quizz/HeroesCards/Carte_Spiderman_Story-min.png';
 import SupermanCard from '../Quizz/HeroesCards/Carte_Superman_Story-min.png';
 
 function Quizz() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      });
 
     const questions = [
         {

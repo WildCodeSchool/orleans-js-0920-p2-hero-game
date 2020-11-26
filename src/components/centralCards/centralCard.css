@@ -347,7 +347,10 @@
 	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer; 
-	color:#9f1524;
+    -webkit-text-stroke: 1px black;
+    color:var(--light);
+   
+    
 	font-weight:bolder;
 	padding:12px 44px;
 	text-decoration:none;
@@ -369,7 +372,7 @@
     display: none;
     margin-bottom: 200px;
     font-family: 'Anton', sans-serif;
-    font-size: 70px;
+    font-size: 200px;
     -webkit-text-stroke: 1px black;
     color:var(--light);
     text-shadow:
@@ -384,7 +387,7 @@
     display: none;
     margin-bottom: 200px;
     font-family: 'Anton', sans-serif;
-    font-size: 70px;
+    font-size: 200px;
     -webkit-text-stroke: 1px black;
     color:var(--light);
     text-shadow:

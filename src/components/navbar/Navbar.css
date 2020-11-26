@@ -43,7 +43,6 @@ a{
 
 .navbar_rightDiv{
     display: flex;
-    padding-right: 50px;
     width: 40%;
     justify-content: center;
     align-items: center;
@@ -51,8 +50,10 @@ a{
 
 .navbar_navList{
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     width: 100%;
-    justify-content: space-around;
+    padding-right: 100px;
 }
 
 .navbar_title{
