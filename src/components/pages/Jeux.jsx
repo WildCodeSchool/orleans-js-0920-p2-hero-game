@@ -11,6 +11,7 @@ function Game() {
     return (
         <div>
             <CentralCard />
+            <div id="rules"></div>
             <Rules />
         </div>
     )
