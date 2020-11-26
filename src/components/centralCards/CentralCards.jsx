@@ -7,6 +7,8 @@ import Anim2 from './AnimAttack2'
 import Anim3 from './AnimAttack3'
 import Anim4 from './AnimAttack4'
 
+import DownArrow from '../assets/down.png'
+
 import CardChoice from './CardChoice'
 import CardLeave from './CardLeave'
 import VS from '../assets/VS.png'
@@ -505,6 +507,9 @@ function CentralCard() {
                     <img className="Versus" src={VS}></img>
                     <div className="ElementsReminderContainer">
                         <ElementsReminder />
+                    </div>
+                    <div className="downarrowcontainer">
+                        <a href="#rules"><img className="downarrow"src={DownArrow}></img></a>
                     </div>
 
                 </div>
