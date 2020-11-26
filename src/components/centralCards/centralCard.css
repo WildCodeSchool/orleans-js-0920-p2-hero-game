@@ -251,6 +251,28 @@
     cursor: pointer;
 }
 
+.downarrow {
+    width: 50px;
+    height: 50px;
+    animation-name: down ;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes down {
+    0%{
+        opacity: 0%;
+        
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
 .ButtonAttack4:hover {
     transform: scale(1.03);
     transition: 0.3s ease;

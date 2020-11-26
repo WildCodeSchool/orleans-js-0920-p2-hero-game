@@ -52,6 +52,7 @@
     font-size: 42px;
     color: var(--light);
     text-align: center;
+    margin-top: 100px;
 }
 
 .rules-intro {
