@@ -254,10 +254,21 @@
 .downarrow {
     width: 50px;
     height: 50px;
+    position: absolute;
+    left: 95%;
+    top: 90%;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: white  0px 0px 5px;
     animation-name: down ;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
     
+}
+.downarrow:hover{
+    transform: scale(1.2);
+    transition: 1s all;
+    animation: none;
 }
 
 @keyframes down {
@@ -384,3 +395,14 @@
      1px 1px 0 var(--secondary-color);
 }
 
+@media screen and (max-width: 1024px) {
+    .downarrow{
+        animation: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .downarrow {
+        display: none;
+    }
+}

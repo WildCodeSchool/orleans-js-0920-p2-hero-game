@@ -7,7 +7,7 @@ import Anim2 from './AnimAttack2'
 import Anim3 from './AnimAttack3'
 import Anim4 from './AnimAttack4'
 
-import DownArrow from '../assets/down-arrow.png'
+import DownArrow from '../assets/down.png'
 
 import CardChoice from './CardChoice'
 import CardLeave from './CardLeave'
