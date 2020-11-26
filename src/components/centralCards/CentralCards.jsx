@@ -516,7 +516,7 @@ function CentralCard() {
                     </div>
                 </div>
                 <div className="endGame">
-                    <div className='defeat'>Défaite..</div>
+                    <div className='defeat'>Défaite</div>
                     <div className='victory'>Victoire !</div>
                     <Link className="buttonplay" to="/choosehero" ><button className="buttonretry"> Rejouer ? </button></Link>
                 </div>
