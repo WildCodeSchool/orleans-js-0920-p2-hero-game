@@ -26,8 +26,9 @@ class Navbar extends React.Component {
 
                         <div className="navbar_rightDiv">
                             <ul className="navbar_navList">
-
-                                <Link className="navbar_title" to="/choosehero" >ACCÈS AU JEU</Link>
+                                <Link className="navbar_title" to="/list" >PERSONNAGES</Link>
+                                <Link className="navbar_title" to="/quizz" >QUIZZ</Link>
+                                <Link className="navbar_title" to="/choosehero" >JEU</Link>
                             </ul>
                         </div>
                         

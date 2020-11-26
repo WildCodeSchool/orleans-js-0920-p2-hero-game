@@ -2,7 +2,7 @@ import {Component} from 'react'
 import './Player.css';
 import Videotraileravenger from '../video/videotraileravenger.mp4';
 import DownImg from '../assets/down.png'
-import { Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Player() {
     return(

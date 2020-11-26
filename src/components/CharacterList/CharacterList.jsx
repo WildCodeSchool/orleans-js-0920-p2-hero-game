@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './CharacterList.css';
 
 import ThanosIc from '../assets/Thanos_icone-min.png';
@@ -72,7 +72,9 @@ import WonderWomanHist from '../assets/Carte_Wonderwoman_Story-min.png';
 
 const CharacterList = () => {
 
-    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      });
 
         const [quickSilver, setQuicksilver]= useState(false)
         const changeQuicksilver=() => setQuicksilver(!quickSilver)
