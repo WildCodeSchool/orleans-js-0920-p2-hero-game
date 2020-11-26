@@ -74,7 +74,7 @@ const CharacterList = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      });
+      },[]);
 
         const [quickSilver, setQuicksilver]= useState(false)
         const changeQuicksilver=() => setQuicksilver(!quickSilver)
