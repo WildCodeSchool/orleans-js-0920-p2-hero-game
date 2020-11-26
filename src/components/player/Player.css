@@ -1,3 +1,72 @@
+.PlayerTotal{
+  display: flex;
+  z-index: -1;
+}
+
+.DivTitle{
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  padding-top: 250px;
+}
+
+.Title{
+  display: flex;
+  color: var(--light);
+  font-family: var(--title-font);
+  letter-spacing: 2px;
+  font-size: 100pt;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-shadow: 5px 5px 8px black;
+}
+
+.DivButton{
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  height: auto;
+}
+
+.Color1{
+  display: flex;
+  position: absolute;
+  padding-top: 60px;
+  height: 74px;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(34,54,69);
+  background: linear-gradient(180deg, rgba(26,29,38,1) 50%, rgba(159,21,36,0.5) 100%);
+}
+
+.Color2{
+  display: flex;
+  position: absolute;
+  margin-top: 906px;
+  height: 140px;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(34,54,69);
+  background: linear-gradient(180deg,   var(--dark) 4%, var(--light) 50%);
+}
+
+.SecondNavTitle{
+  color: var(--secondary-color);
+  font-family: var(--title-font);
+  margin-block-end: 0;
+  margin-block-start: 0;
+  letter-spacing: 2px;
+  font-size: 35pt;
+  padding: 10px;
+  border: solid 5px var(--secondary-color);
+}
+
 .Playermain {
     position: absolute;
     width: 100vw;
