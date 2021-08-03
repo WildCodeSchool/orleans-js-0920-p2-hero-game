@@ -3,6 +3,7 @@ import './Footer.css';
 import Github from './github_icon-icons.com_65450.png';
 import WCS from './WCS.png';
 import LogoMSH from './Logo_Big.png';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return(
@@ -11,9 +12,9 @@ function Footer() {
                 <ul className="footer_div">
                     <p className="footer_title">MY SUP'R HEROS</p>
                     <picture><img className="footer_logo" src={LogoMSH} alt="logo MY SUP'R HEROS"/></picture>
-                    <a href="#list"><p className="footer_text"> Les Personnages</p></a>
-                    <a href="#quizz"><p className="footer_text">Le Quizz</p></a>
-                    <a href="#accueil"><p className="footer_text">Le jeu</p></a>
+                    <Link to="/list"><p className="footer_text"> Les Personnages</p></Link>
+                    <Link to="/quizz"><p className="footer_text">Le Quizz</p></Link >
+                    <Link to="/choosehero"><p className="footer_text">Le jeu</p></Link >
                 </ul>
                 <ul className="footer_div">
                     <p className="footer_title">WILD CODE SCHOOL</p>

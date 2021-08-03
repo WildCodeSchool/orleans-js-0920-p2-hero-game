@@ -4,9 +4,14 @@ import Rules from '../Rules/Rules';
 
 function Game() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      });
+
     return (
         <div>
             <CentralCard />
+            <div id="rules"></div>
             <Rules />
         </div>
     )
